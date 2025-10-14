@@ -65,11 +65,11 @@ const Testimonials = () => {
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2">
-                <div className="p-2">
-                  <Card className="border-2 border-accent/20 hover:border-accent transition-all duration-300 h-full">
-                    <CardContent className="p-6 flex flex-col h-full">
-                      <Quote className="w-10 h-10 text-accent mb-4" />
-                      <p className="text-foreground mb-6 flex-grow italic">
+                <div className="p-2 h-full">
+                  <Card className="border-2 border-accent/20 hover:border-accent transition-all duration-300 h-full flex flex-col">
+                    <CardContent className="p-6 flex flex-col flex-grow">
+                      <Quote className="w-10 h-10 text-accent mb-4 flex-shrink-0" />
+                      <p className="text-foreground mb-6 flex-grow italic min-h-[120px]">
                         "{testimonial.text}"
                       </p>
                       <div className="border-t border-accent/20 pt-4">
