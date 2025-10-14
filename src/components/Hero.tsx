@@ -52,15 +52,15 @@ const Hero = () => {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto px-4">
-            <div className="flex items-center justify-center sm:justify-start gap-3 text-primary-foreground/90">
+            <div className="flex items-center justify-center gap-2 text-primary-foreground/90 whitespace-nowrap">
               <Phone size={18} className="flex-shrink-0" />
               <span className="text-xs sm:text-sm md:text-base">(17) 99181-0942</span>
             </div>
-            <div className="flex items-center justify-center sm:justify-start gap-3 text-primary-foreground/90">
+            <div className="flex items-center justify-center gap-2 text-primary-foreground/90 whitespace-nowrap overflow-hidden">
               <Mail size={18} className="flex-shrink-0" />
-              <span className="text-xs sm:text-sm md:text-base break-all">midasreboques@gmail.com</span>
+              <span className="text-xs sm:text-sm md:text-base truncate">midasreboques@gmail.com</span>
             </div>
-            <div className="flex items-center justify-center sm:justify-start gap-3 text-primary-foreground/90 sm:col-span-2 md:col-span-1">
+            <div className="flex items-center justify-center gap-2 text-primary-foreground/90 whitespace-nowrap sm:col-span-2 md:col-span-1">
               <MapPin size={18} className="flex-shrink-0" />
               <span className="text-xs sm:text-sm md:text-base">São José do Rio Preto</span>
             </div>
