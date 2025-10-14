@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import midia1 from "@/assets/midia_1.png";
@@ -51,7 +52,7 @@ const ProductGallery = () => {
           <Carousel
             setApi={setApi}
             opts={{
-              align: "center",
+              align: "start",
               loop: true,
             }}
             className="w-full max-w-5xl mx-auto"
@@ -59,24 +60,26 @@ const ProductGallery = () => {
             <CarouselContent>
               {images.map((image, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div 
-                    className="p-2 cursor-pointer group"
-                    onClick={() => setSelectedImage(image.src)}
-                  >
-                    <div className="relative overflow-hidden rounded-lg border-2 border-accent/20 hover:border-accent transition-all duration-300 shadow-lg hover:shadow-xl">
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
-                    </div>
+                  <div className="p-1">
+                    <Card 
+                      className="cursor-pointer group overflow-hidden border-2 border-accent/20 hover:border-accent transition-all duration-300"
+                      onClick={() => setSelectedImage(image.src)}
+                    >
+                      <CardContent className="p-0 aspect-square relative">
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
+                      </CardContent>
+                    </Card>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-0 border-accent/60 hover:bg-accent hover:text-accent-foreground" />
-            <CarouselNext className="right-0 border-accent/60 hover:bg-accent hover:text-accent-foreground" />
+            <CarouselPrevious className="border-accent/60 hover:bg-accent hover:text-accent-foreground" />
+            <CarouselNext className="border-accent/60 hover:bg-accent hover:text-accent-foreground" />
           </Carousel>
         </div>
       </section>
