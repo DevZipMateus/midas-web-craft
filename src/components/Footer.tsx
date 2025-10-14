@@ -3,8 +3,8 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Contato */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-accent">Contato</h3>
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 mt-8 pt-8 text-center text-sm text-muted-foreground">
+        <div className="border-t border-primary-foreground/10 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} MIDAS REBOQUES E ENGATES. Todos os direitos reservados.</p>
           <p className="mt-2">CNPJ: 62.220.109/0001-91</p>
         </div>

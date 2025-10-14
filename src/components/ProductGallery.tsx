@@ -42,9 +42,9 @@ const ProductGallery = () => {
     <>
       <section className="py-20 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">Nossos produtos</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+          <div className="text-center mb-12 px-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">Nossos produtos</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
               Confira alguns dos nossos trabalhos em carretas e engates personalizados
             </p>
           </div>
@@ -55,11 +55,11 @@ const ProductGallery = () => {
               align: "start",
               loop: true,
             }}
-            className="w-full max-w-5xl mx-auto"
+            className="w-full max-w-5xl mx-auto px-4 sm:px-8"
           >
             <CarouselContent>
               {images.map((image, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="basis-full sm:basis-1/2 md:basis-1/2 lg:basis-1/3">
                   <div className="p-1">
                     <Card 
                       className="cursor-pointer group overflow-hidden border-2 border-accent/20 hover:border-accent transition-all duration-300"

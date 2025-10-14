@@ -13,24 +13,24 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight px-4">
             MIDAS REBOQUES E ENGATES
           </h1>
           
           <div className="h-1 w-32 bg-accent mx-auto mb-8"></div>
           
-          <h2 className="text-xl md:text-2xl lg:text-3xl mb-8 font-light text-primary-foreground/90">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 font-light text-primary-foreground/90 px-4">
             Fabricação de carretas personalizadas e engates automotivos com qualidade, segurança e durabilidade
           </h2>
           
-          <p className="text-lg md:text-xl mb-12 text-primary-foreground/80 font-medium tracking-wide">
+          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-primary-foreground/80 font-medium tracking-wide px-4">
             QUALIDADE QUE ACOMPANHA SEGURANÇA
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4">
             <a
               href="https://wa.me/5517991810942"
-              className="bg-accent text-accent-foreground px-8 py-4 rounded-full font-semibold text-lg hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center gap-2"
+              className="w-full sm:w-auto bg-accent text-accent-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2"
             >
               <Phone size={20} />
               Fale conosco
@@ -45,24 +45,24 @@ const Hero = () => {
                   window.scrollTo({ top: offsetPosition, behavior: "smooth" });
                 }
               }}
-              className="bg-primary-foreground/10 text-primary-foreground border-2 border-primary-foreground/60 px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-foreground hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              className="w-full sm:w-auto bg-primary-foreground/10 text-primary-foreground border-2 border-primary-foreground/60 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-primary-foreground hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               Nossos produtos
             </button>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <div className="flex items-center justify-center gap-3 text-primary-foreground/90">
-              <Phone size={20} className="flex-shrink-0" />
-              <span className="text-sm md:text-base">(17) 99181-0942</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto px-4">
+            <div className="flex items-center justify-center sm:justify-start gap-3 text-primary-foreground/90">
+              <Phone size={18} className="flex-shrink-0" />
+              <span className="text-xs sm:text-sm md:text-base">(17) 99181-0942</span>
             </div>
-            <div className="flex items-center justify-center gap-3 text-primary-foreground/90">
-              <Mail size={20} className="flex-shrink-0" />
-              <span className="text-sm md:text-base break-all">midasreboques@gmail.com</span>
+            <div className="flex items-center justify-center sm:justify-start gap-3 text-primary-foreground/90">
+              <Mail size={18} className="flex-shrink-0" />
+              <span className="text-xs sm:text-sm md:text-base break-all">midasreboques@gmail.com</span>
             </div>
-            <div className="flex items-center justify-center gap-3 text-primary-foreground/90">
-              <MapPin size={20} className="flex-shrink-0" />
-              <span className="text-sm md:text-base">São José do Rio Preto</span>
+            <div className="flex items-center justify-center sm:justify-start gap-3 text-primary-foreground/90 sm:col-span-2 md:col-span-1">
+              <MapPin size={18} className="flex-shrink-0" />
+              <span className="text-xs sm:text-sm md:text-base">São José do Rio Preto</span>
             </div>
           </div>
         </div>

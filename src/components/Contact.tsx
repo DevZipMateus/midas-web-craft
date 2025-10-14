@@ -15,7 +15,7 @@ const Contact = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12">
             {/* Informações de Contato */}
             <div className="space-y-6">
               <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-all duration-300">

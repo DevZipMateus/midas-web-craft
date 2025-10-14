@@ -28,7 +28,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img src={logoMidas} alt="MIDAS REBOQUES E ENGATES" className="h-24 md:h-16" />
+            <img src={logoMidas} alt="MIDAS REBOQUES E ENGATES" className="h-16 sm:h-20 md:h-16" />
           </div>
 
           {/* Desktop Navigation */}

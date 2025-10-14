@@ -47,9 +47,9 @@ const Testimonials = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-muted/20 to-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">Depoimentos</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-12 px-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">Depoimentos</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
             O que nossos clientes dizem sobre nossos produtos e serviços
           </p>
         </div>
@@ -60,11 +60,11 @@ const Testimonials = () => {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-5xl mx-auto"
+          className="w-full max-w-5xl mx-auto px-4 sm:px-8"
         >
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2">
+              <CarouselItem key={index} className="basis-full md:basis-1/2">
                 <div className="p-2 h-full">
                   <Card className="border-2 border-accent/20 hover:border-accent transition-all duration-300 h-full flex flex-col">
                     <CardContent className="p-6 flex flex-col flex-grow">
