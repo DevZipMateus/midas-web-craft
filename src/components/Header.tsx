@@ -27,9 +27,9 @@ const Header = () => {
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-background"}`}>
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
+          <button onClick={() => scrollToSection("inicio")} className="flex items-center cursor-pointer">
             <img src={logoMidas} alt="MIDAS REBOQUES E ENGATES" className="h-16 sm:h-20 md:h-16" />
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
