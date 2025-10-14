@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/hero-background.png";
 
 const Hero = () => {
   return (
