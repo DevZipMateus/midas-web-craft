@@ -28,7 +28,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <button onClick={() => scrollToSection("inicio")} className="flex items-center cursor-pointer">
-            <img src={logoMidas} alt="MIDAS REBOQUES E ENGATES" className="h-16 sm:h-20 md:h-16" />
+            <img src={logoMidas} alt="MIDAS REBOQUES E ENGATES" className="h-24 sm:h-20 md:h-16" />
           </button>
 
           {/* Desktop Navigation */}
